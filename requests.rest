@@ -1,0 +1,28 @@
+GET http://localhost:3000/api/v1/auth/users
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlkbS5jYWxjdWx1c0BnbWFpbC5jb20iLCJpYXQiOjE2MTc5ODcwMjB9.J3oKYaddo_D4Sk0hM6QhCjPZ6RwulYA1xpQ3JNw0fK0
+
+###
+POST http://localhost:3000/api/v1/auth/users
+Content-Type: application/json
+
+{
+	"firstName": "Michael",
+	"lastName": "Ige",
+	"email": "mikel@gmail.com",
+	"password": "ma13ka2la", 
+	"gender": "male", 
+	"jobRole": "CEO", 
+	"department": "CEO", 
+	"address": "Kuje, Abuja", 
+	"isAdmin": true
+}
+
+###
+
+POST http://localhost:3000/api/v1/auth/login
+Content-Type: application/json
+
+{
+	"email": "idm.calculus@gmail.com", 
+	"password": "ma13ka2la"
+}
